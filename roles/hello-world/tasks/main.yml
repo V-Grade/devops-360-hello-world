@@ -18,7 +18,7 @@
     dest: /etc/nginx/sites-available/helloworld
 
 - name: Symlink hello-world in sites-enabled
-  copy:
+  file:
     state: link
     src: /etc/nginx/sites-available/helloworld
     dest: /etc/nginx/sites-enabled/helloworld
